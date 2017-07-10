@@ -1,0 +1,39 @@
+<head>
+        <title>Amberg Event Embeddings</title>
+        <meta charset="utf-8">
+        <style>
+
+            .axis path,
+            .axis line {
+                fill: none;
+                stroke: black;
+                shape-rendering: crispEdges;
+            }
+
+            .axis text {
+                font-family: sans-serif;
+                font-size: 14px;
+            }
+
+            circle {fill : None}
+        </style>
+	<script src="../js/d3.v3.js"></script>
+  <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <div id=headcontainer>
+    <button id=step_button>Next time step</button>
+    <label id=step_label></label>
+    <input id=input_text type="text" list="exampleList">
+    <datalist id="exampleList"></datalist>
+    <button id=filter_button>Highlight</button>
+  </div>
+
+  <div id=vizcontainer>
+  <svg style="width:1080;height:860px;border:1px lightgray solid;">
+  </svg>
+</div>
+	<script src="../js/scatter_plot.js"></script>
+
+</body>
+</html>
